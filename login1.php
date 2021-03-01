@@ -12,6 +12,15 @@
  background-size: 100%100%;
  }
  </style>
+  <style>
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+table {
+  border-spacing: 15px;
+}
+</style>
  <table border="2">
  <tr>
  <th>Product ID</th>
@@ -21,7 +30,7 @@
  <th colspan="2" align="center">Operation</th>
  </tr>
 <?php
-echo '<p>ATN Shop </p>';
+echo '<p>GnouhP ATN Shop </p>';
 $host_heroku = "ec2-54-242-43-231.compute-1.amazonaws.com";
 $db_heroku = "ddlp9pmlqgflmt";
 $user_heroku = "pumlbuetcvwepq";
