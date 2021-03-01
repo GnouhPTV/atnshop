@@ -65,14 +65,14 @@ $productid = $_GET['productid'];
 $productname = $_GET['productname'];
 $productprice = $_GET['productprice'];
 $quantityonhand = $_GET['quantityonhand'];
-  $query = "UPDATE atnshop1 SET productid='$productid', productname='$productname',
+  $query = "UPDATE atnshop2 SET productid='$productid', productname='$productname',
 productprice='$productprice', quantityonhand='$quantityonhand' WHERE productid='$productid' ";
 $data = pg_query($pg_heroku,$query);
 if($data)
 {
 echo "<script>alert('Updated Successfully!')</script>";
 ?>
-<meta http-equiv="refresh" content="0; url=https://gnouhpatnshop.herokuapp.com/login1.php" />
+<meta http-equiv="refresh" content="0; url=https://gnouhpatnshop.herokuapp.com/login2.php" />
 <?php
 }
 else
