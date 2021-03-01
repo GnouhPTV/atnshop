@@ -21,7 +21,6 @@ table {
   border-spacing: 15px;
 }
 </style>
- <table border="2">
  <tr>
  <th>Product ID</th>
  <th>Product Name</th>
