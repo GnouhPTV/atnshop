@@ -24,7 +24,7 @@ $qt=$_GET['qt'];
  body {
  background-image: url('background.jpg');
  background-attachment: fixed;
-   background-size: 100%100%;
+ background-size: 100%100%;
  }
  </style>
  <br>
@@ -54,7 +54,7 @@ $qt=$_GET['qt'];
  <tr>
  <td colspan="2" align="center"><input type="submit" id="button" name="submit" value="Update"></td>
  </tr>
- </form>
+   </form>
  </table>
 </body>
 </html>
@@ -65,7 +65,7 @@ $productid = $_GET['productid'];
 $productname = $_GET['productname'];
 $productprice = $_GET['productprice'];
 $quantityonhand = $_GET['quantityonhand'];
-  $query = "UPDATE atnshop2 SET productid='$productid', productname='$productname',
+$query = "UPDATE atnshop2 SET productid='$productid', productname='$productname',
 productprice='$productprice', quantityonhand='$quantityonhand' WHERE productid='$productid' ";
 $data = pg_query($pg_heroku,$query);
 if($data)
