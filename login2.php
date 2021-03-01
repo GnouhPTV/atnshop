@@ -42,7 +42,7 @@ if (!$pg_heroku)
 {
   die('Error: Could not connect: ' . pg_last_error());
 }
- $query = 'select * from atnshop1';
+ $query = 'select * from atnshop2';
 $data = pg_query($pg_heroku, $query);
  $total = pg_num_rows($data);
 if($total!=0)
