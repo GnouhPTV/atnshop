@@ -1,7 +1,7 @@
 <?php
 $host_heroku = "ec2-54-242-43-231.compute-1.amazonaws.com";
 $db_heroku = "ddlp9pmlqgflmt";
-$user_heroku = "ddlp9pmlqgflmt";
+$user_heroku = "pumlbuetcvwepq";
 $pw_heroku =
 "577988a8b0e99d63a080ccb20a168958d09bc3098df69e48530c79bb3e95ad00";
 $conn_string = "host=$host_heroku port=5432 dbname=$db_heroku user=$user_heroku password=$pw_heroku";
@@ -66,7 +66,7 @@ if($data)
 {
 echo "<script>alert('Added Successfully!')</script>";
 ?>
-<meta http-equiv="refresh" content="0; url=https://quangatnshop.herokuapp.com/staff1.php" />
+<meta http-equiv="refresh" content="0; url=https://gnouhpatnshop.herokuapp.com/login1.php" />
 <?php
 }
 else
