@@ -60,15 +60,6 @@ echo "
 }
 
 ?>
-   <style>
-table, th, td {
-  border: 1px solid black;
-  padding: 5px;
-}
-table {
-  border-spacing: 15px;
-}
-</style>
 <table border="2">
  <tr>
  <th>Product ID</th>
