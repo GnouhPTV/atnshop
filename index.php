@@ -1,8 +1,18 @@
 <html>
   <head>
-    <title>PHP Test</title>
-  </head>
-  <body>
-    <?php echo '<p> Hello world!</p>'; ?>
-  </body>
-  </html
+    <link rel="stylesheet" href ="styles.css">
+    <title> ATN Shop </title>
+ <ul>
+ <li> <a href="login.php">Login </a></li>
+ </ul>
+    </head>
+ <body>
+ <style>
+ body {
+ background-image: url('background.jpg');
+ background-attachment: fixed;
+ background-size: 100%100%;
+ }
+ </style>
+ </body>
+</html>
