@@ -1,8 +1,7 @@
 <html>
 <head>
  <ul>
- <li> <a href="">View database</a> </li>
- <li> <a href="login.php"> Log out</a> </li>
+ <li> <a href="index.php"> Log out</a> </li>
  </ul>
  </head>
  <body>
@@ -13,7 +12,7 @@
  background-size: 100%100%;
  }
  </style>
- <table border="2">
+
  <tr>
  <th>Product ID</th>
  <th>Product Name</th>
