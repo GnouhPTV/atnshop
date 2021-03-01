@@ -12,7 +12,7 @@
  background-size: 100%100%;
  }
  </style>
-
+ <table border="2">
  <tr>
  <th>Product ID</th>
  <th>Product Name</th>
