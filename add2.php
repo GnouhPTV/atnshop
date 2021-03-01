@@ -20,7 +20,7 @@ die('Error: Could not connect: ' . pg_last_error());
  body {
  background-image: url('background.jpg');
  background-attachment: fixed;
- background-size: 100%100%;
+background-size: 100%100%;
  }
  </style>
  <br>
@@ -29,26 +29,26 @@ die('Error: Could not connect: ' . pg_last_error());
 
  <tr>
  <td>Product ID</td>
- <td><input type="text" value="<?php echo "$pi" ?>" name="productid" required></td>
+ <td><input type="text" value="" name="productid" required></td>
  </tr>
 
  <tr>
  <td>Product Name</td>
- <td><input type="text" value="<?php echo "$pn" ?>" name="productname" required></td>
+ <td><input type="text" value="" name="productname" required></td>
  </tr>
 
  <tr>
  <td>Product Price</td>
- <td><input type="text" value="<?php echo "$pp" ?>" name="productprice" required></td>
+ <td><input type="text" value="" name="productprice" required></td>
  </tr>
 
  <tr>
  <td>Quantity</td>
- <td><input type="text" value="<?php echo "$qt" ?>" name="quantityonhand" required></td>
+ <td><input type="text" value="" name="quantityonhand" required></td>
  </tr>
 
  <tr>
- <td colspan="2" align="center"><input type="submit" id="button" name="submit" value="Update"></td>
+ <td colspan="2" align="center"><input type="submit" id="button" name="submit" value="Add"></td>
  </tr>
  </form>
  </table>
@@ -57,16 +57,15 @@ die('Error: Could not connect: ' . pg_last_error());
 <?php
 if($_GET['submit'])
 {
-$productid = $_GET['productid'];
-$productname = $_GET['productname'];
-$productprice = $_GET['productprice'];
-$quantityonhand = $_GET['quantityonhand'];
-$query = "UPDATE atnshop2 SET productid='$productid', productname='$productname',
-productprice='$productprice', quantityonhand='$quantityonhand' WHERE productid='$productid' ";
+$pi=$_GET['productid'];
+$pn=$_GET['productname'];
+$pp=$_GET['productprice'];
+$qt=$_GET['quantityonhand'];
+ $query = "INSERT INTO atnshop2 VALUES ('$pi','$pn','$pp','$qt')";
 $data = pg_query($pg_heroku,$query);
 if($data)
 {
-echo "<script>alert('Updated Successfully!')</script>";
+echo "<script>alert('Added Successfully!')</script>";
 ?>
 <meta http-equiv="refresh" content="0; url=https://gnouhpatnshop.herokuapp.com/login2.php" />
 <?php
