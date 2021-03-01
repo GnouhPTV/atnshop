@@ -12,7 +12,7 @@ if (!$pg_heroku)
 die('Error: Could not connect: ' . pg_last_error());
 }
 $productid=$_GET['pi'];
-$query = "DELETE FROM atnshop1 WHERE productid = '$productid'";
+$query = "DELETE FROM atnshop2 WHERE productid = '$productid'";
 $data = pg_query($pg_heroku,$query);
 if($data)
 {
