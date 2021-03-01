@@ -1,9 +1,6 @@
 <html>
   <head>
     <title> Login </title>
-    <ul>
-      <li> <a href="">Login </a></li>
-    </ul>
   </head>
   <body>
     <style>
