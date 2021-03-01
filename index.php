@@ -25,13 +25,13 @@
       $pass= $_POST['password'];
     }
     if($user == "login1" && $pass == "admin"){
-      header("location:staff1.php");
+      header("location:login1.php");
     }
     if($user == "login2" && $pass == "admin"){
-   header("location:staff2.php");
+   header("location:login2.php");
     }
     if($user == "admin" && $pass == "admin"){
-      header("location:boss.php");
+      header("location:admin.php");
     }
     ?>
   </body>
