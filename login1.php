@@ -1,7 +1,5 @@
 <html>
 <head>
-<link rel="stylesheet" href ="styles.css">
-<title> Database </title>
  <ul>
  <li> <a href="">View database</a> </li>
  <li> <a href="login.php"> Log out</a> </li>
